@@ -116,7 +116,9 @@ body{
     width: 50%;
 }
 
-
+.brand-lover::-webkit-scrollbar{
+    display: none;
+}
 .brand-lover{
     padding: 2rem;
     display: flex;
@@ -443,10 +445,8 @@ textarea {
     display: none;
 }
 .pcard:hover h1{
-    font-size: large;
-    padding: .5rem;
+    text-decoration: underline;
     border-radius: 5rem;
-    background: -webkit-linear-gradient(45deg, #FEA628, #76187E 90%);
 
 
 }
@@ -459,4 +459,36 @@ textarea {
 .pcard img{
     width: 100%;
     border-radius: 3rem;
+}
+.Learnmore{
+    padding: 2rem;
+    border: 0;
+    cursor: pointer;
+    border-radius: 2rem;
+    background: -webkit-linear-gradient(45deg, #FEA628, #76187E 90%);
+    font-size: large;
+    font-weight: 900;
+}
+.logos-slide{
+    width: 100%;
+    gap: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+}
+.logos-slide::-webkit-scrollbar{
+    display: none;
+}
+
+footer{
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footermenu a{
+    margin: 2rem;
+    text-decoration: none;
+    border-right: 3px white;
 }

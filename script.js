@@ -22,3 +22,25 @@ displayReview(currentReviewIndex);
 setInterval(()=>{
     changeReview(1)
 },2000)
+gsap.from("nav ", {
+    y:-100,
+    opacity:0,
+    duration: 1,
+  })
+  gsap.to(".logos-slide",{
+    transform:"translateX(-100%)",
+    duration:9,
+    // delay:1,
+    repeat:-1,
+    ease:"none",
+  })
+  gsap.from(".pcard ",{
+    opacity:0,
+    y:200,
+    scrollTrigger:{
+        trigger:".pcard",
+        scroller:"body",
+
+    },
+    duration:1
+  })
