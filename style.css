@@ -1,0 +1,462 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color: #111;
+    color: white;   
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+ nav{
+    /* background-color: white;  */
+    filter: drop-shadow(1px 0px 20px #2CFFFE)  ;
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+     align-items: center;
+} 
+.menu{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.menu a{
+    text-decoration: none;
+    
+}
+.search i{
+    color: white;
+    padding: 2rem;
+
+}
+.logo{
+   
+    height: 100%;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    height: 100%;
+    background: transparent ;
+}
+.hero-section{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+.happy-client{
+    display: flex;
+    align-items: center;
+    padding: 5rem;
+    justify-content: space-between;
+}
+.happy-client h1{
+    font-weight: 900;
+    font-size: 4rem;
+}
+.happy-client p{
+    font-weight: 200;
+}
+.option{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.hero-section img{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+.hero-section .hero-text{
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.hero-text{
+    position: absolute;
+    background: transparent;
+}
+.hero-text p{
+    width: 50%;
+    background: transparent;
+   text-align: center;
+   font-size: large;
+   /* font-weight: 700 ; */
+}
+.hero-section h1{
+    background-color: transparent   ;
+    font-weight: 900;
+}
+.hero-section .image{
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    width: 50%;
+}
+
+
+.brand-lover{
+    padding: 2rem;
+    display: flex;
+    border-radius:1rem ;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    overflow-x: auto;
+    /* background: linear-gradient(to top left, black,#D82131,#501a1e,#D82131); */
+    background: -webkit-linear-gradient(45deg, #FEA628, #76187E 90%);
+}
+.adv{
+    height: 4rem;
+    width: 20%;
+    background: transparent;
+    
+}
+section{
+    overflow-y: auto;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+.header h1{
+    text-transform: uppercase;
+    line-height: 8rem;
+    font-size: 5rem;
+    font-weight: 900;
+}
+.header p{
+    font-weight: 900;
+}
+.adv img{
+    background: transparent;
+    height: 100%;
+}
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 1rem 0;
+}
+.card{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 10%;
+    overflow-y: hidden;
+    border-radius: 2rem;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 1px 1px 20px #FEA628;
+    
+}
+.card img{
+    width: 100%;
+}
+.card h1{
+    background: transparent;
+}
+.inner-card{
+    transition: all 1s;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, black, transparent);
+    position: absolute;
+    flex-direction: column;
+}
+.hover-card p{
+    margin: 0.5rem;
+    background: transparent;
+    text-align: center;
+    width: 80%;
+    opacity: 1; 
+}
+.inner-card:hover .hover-card{
+    opacity: 1;
+
+}
+.inner-card:hover p{
+    opacity: 1;
+   
+    text-align: center;
+
+}
+.inner-card:hover.inner-card .h1{
+    opacity: 0;
+}
+.hover-card{
+    transition: all 1s;
+    background:linear-gradient(to top,#501a1e,transparent);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 8px;
+    padding: 5rem;
+    box-shadow: 1px 5px 20px #501a1e;
+}
+
+h2 {
+    text-align: center;
+}
+.reviews-carousel {
+    position: relative;
+    max-width: 600px;
+    height: 20rem;
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    /* background: white; */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(211, 181, 181, 0.781);
+    text-align: center;
+}
+
+.reviews {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: transform 0.5s ease;
+}
+
+.review {
+    display: flex;
+    align-items: center;
+    transition: all 1s;
+    min-width: 100%;
+    border: 2px white;
+    display: none; /* Hide all reviews by default */
+}
+
+.review.active {
+    display: block; /* Show only the active review */
+}
+.review h4{
+    font-weight: 900;
+    font-size: xx-large;
+}
+.reviews-carousel button{
+    width: 3rem;
+    height: 2rem;
+    color: #111;
+    cursor: pointer;
+    background: white;
+    border-radius: 40%;
+}
+
+
+.button2:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+h4 {
+    margin: 10px 0 5px;
+}
+
+span {
+    font-size: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.submit {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to bottom ,rgb(92, 33, 33),red) ;
+    border-radius: 1rem ;
+    cursor: pointer;
+    border-radius: 3rem;
+}
+
+.submit:hover {
+    background:linear-gradient(to top ,rgb(92, 33, 33),red) ;
+}
+.corosel video{
+    width:  100%;
+}
+.corosel{
+    width: 100vw;
+    /* overflow: hidden; */
+    /* background: rebeccapurple; */
+}
+
+
+
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background: white;
+    border-radius: 20%;
+    cursor: pointer;
+    padding: 10px;
+    width: 10%;
+    border: none;
+    margin-bottom: 0.5rem;
+}
+
+/* .prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+} */
+
+.button i {
+    position: absolute;
+    z-index: 999;
+    font-size: 24px;
+    color: white;
+}
+.projects{
+    padding: 2rem;
+    display: flex;
+    text-align: center;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    scrollbar-width: none;
+    width: 100%;
+    overflow-y: auto;
+  
+    height: 80vh;
+}
+.projects h1{
+    font-size: xx-large;
+    width: 100%;
+}
+.projects::-webkit-scrollbar{
+    display: none;
+}
+.projects-cards{
+    padding: 5rem;
+    overflow-y: auto;
+    background: linear-gradient(to top,black , transparent);
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5rem;
+    top: 0;
+    position: absolute;
+    display: flex;
+    scrollbar-width: none;
+
+}
+.mainimg{
+    position: sticky;
+    height: 100%;
+    top: -25%;
+    width: 100%;
+    height: 100%;
+    /* z-index: -1; */
+}
+.projects-cards::-webkit-scrollbar-button{
+    display: none;
+}
+
+.projects .pcard{
+    gap: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    overflow: hidden;
+    border-radius: 2rem;
+    background-color:transparent;
+    /* height: 5rem;
+    width: 5rem; */
+}
+.more{
+    display: none;
+}
+.pcard:hover h1{
+    font-size: large;
+    padding: .5rem;
+    border-radius: 5rem;
+    background: -webkit-linear-gradient(45deg, #FEA628, #76187E 90%);
+
+
+}
+.pcard:hover .more{
+    display: block;
+}
+.pcard h1{
+    background: transparent;
+}
+.pcard img{
+    width: 100%;
+    border-radius: 3rem;
+}
